@@ -5,22 +5,22 @@ class msg {
   static step() {
     this.color = this.color || consoleColors.BgBlue;
     this.message = this.message || this.getMsg(arguments);
-    console.log('\n\n');
     console.log(
+      '\n\n',
       this.color,
       consoleColors.Bright,
       this.message,
       consoleColors.Reset,
+      '\n\n',
     );
-    console.log('\n\n');
     this.done();
   }
 
   static substep() {
     this.color = this.color || consoleColors.BgMagenta;
     this.message = this.message || this.getMsg(arguments);
-    console.log('\n\n');
     console.log(
+      '\n\n',
       this.color,
       consoleColors.Bright,
       this.message,
